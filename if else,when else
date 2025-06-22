@@ -1,0 +1,26 @@
+fun main() {
+
+        val booksTopToBottom =mapOf("fiction" to 1, "non fiction" to 2, "biography" to 3,"auto-biography" to 4 , "how-to"
+          to 5 ,"business" to 6 , "atlas" to 7 )
+
+
+        var book = "atlas"
+        if (booksTopToBottom.containsKey(book)) {
+            println("Yes, it contains $book")
+        } else {
+            println("No, it does not contain  $book")
+        }
+
+        val value = 1  
+        if (booksTopToBottom.containsValue(value)) {
+            println("Yes, it contains value  $value")
+        } else {
+            println("No, it does not contain value  $value")
+        }
+            val books = "biography"
+            when (book) {
+                "biography" -> ("The book is biography")
+                else -> ("The book is not biography")
+            }
+
+}
